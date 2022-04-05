@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Tickets</title>
+</head>
+<body>
+
+<a href="/">Back to Home</a><br></br>
+<div>
+    <h1>Tickets</h1>
+    <table style="border: 1px solid black">
+        <thead>
+        <tr>
+            <th style="border: 1px solid black" scope="col">Id</th>
+            <th style="border: 1px solid black" scope="col">userId</th>
+            <th style="border: 1px solid black" scope="col">eventId</th>
+            <th style="border: 1px solid black" scope="col">place</th>
+            <th style="border: 1px solid black" scope="col">category</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="ticket: ${tickets}">
+            <td style="border: 1px solid black" th:text="${ticket.id}"></td>
+            <td style="border: 1px solid black" th:text="${ticket.userId}"></td>
+            <td style="border: 1px solid black" th:text="${ticket.eventId}"></td>
+            <td style="border: 1px solid black" th:text="${ticket.place}"></td>
+            <td style="border: 1px solid black" th:text="${ticket.category}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

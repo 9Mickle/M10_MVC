@@ -1,0 +1,27 @@
+<storage>
+    <tickets>
+        <ticket>
+            <id>1</id>
+            <userId>1</userId>
+            <eventId>1</eventId>
+            <place>1</place>
+            <category>STANDARD</category>
+        </ticket>
+
+        <ticket>
+            <id>2</id>
+            <userId>2</userId>
+            <eventId>2</eventId>
+            <place>2</place>
+            <category>PREMIUM</category>
+        </ticket>
+
+        <ticket>
+            <id>3</id>
+            <userId>3</userId>
+            <eventId>3</eventId>
+            <place>3</place>
+            <category>STANDARD</category>
+        </ticket>
+    </tickets>
+</storage>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Users</title>
+</head>
+<body>
+
+<a href="/user/create">Create user</a><br>
+<a href="/">Back to Home</a><br>
+
+<div>
+    <table style="border: 1px solid black">
+        <thead>
+        <tr>
+            <th style="border: 1px solid black" scope="col">Id</th>
+            <th style="border: 1px solid black" scope="col">Name</th>
+            <th style="border: 1px solid black" scope="col">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user: ${users}">
+            <td style="border: 1px solid black" th:text="${user.id}"></td>
+            <td style="border: 1px solid black" th:text="${user.name}"></td>
+            <td style="border: 1px solid black" th:text="${user.email}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
