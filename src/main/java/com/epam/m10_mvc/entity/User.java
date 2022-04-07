@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Component
 public class User {
     private Long id;
     private String name;

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Create Event</title>
 </head>
 <body>
 
-<a href="/">Back to Home</a><br>
+<nav>
+    <a href="/">Back to Home</a> |
+</nav>
 
 <div>
     <form th:method="POST" th:action="@{/event/create}" th:object="${event}">
         <label for="id">Enter id: </label>
         <input type="number" th:field="*{id}" id="id"/>
-        <br>
+        <br></br>
 
         <label for="title">Enter title: </label>
         <input type="text" th:field="*{title}" id="title"/>
-        <br>
+        <br></br>
 
-        <label for="date">Enter date </label>
+        <label for="date">Enter date: </label>
         <input type="date" th:field="*{date}" id="date"/>
-        <br>
+        <br></br>
         <input type="submit" value="Create"/>
     </form>
 </div>

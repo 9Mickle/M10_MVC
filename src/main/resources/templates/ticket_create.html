@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Create Ticket</title>
 </head>
 <body>
 
-<a href="/">Back to Home</a><br>
+<nav>
+    <a href="/">Back to Home</a> |
+</nav>
 <div>
     <form th:method="POST" th:action="@{/ticket/create}" th:object="${ticket}">
         <label for="id">Enter id: </label>
         <input type="number" th:field="*{id}" id="id"/>
-        <br>
+        <br></br>
 
         <label for="userId">Enter userId: </label>
         <input type="number" th:field="*{userId}" id="userId"/>
-        <br>
+        <br></br>
 
         <label for="eventId">Enter eventId: </label>
         <input type="number" th:field="*{eventId}" id="eventId"/>
-        <br>
+        <br></br>
 
         <label for="place">Enter place: </label>
         <input type="number" th:field="*{place}" id="place"/>
-        <br>
+        <br></br>
 
         <label for="category">Enter category (STANDARD OR PREMIUM): </label>
         <input type="text" th:field="*{category}" id="category"/>
-        <br>
+        <br></br>
 
         <input type="submit" value="Create"/>
     </form>
