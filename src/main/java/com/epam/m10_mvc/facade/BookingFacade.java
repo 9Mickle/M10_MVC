@@ -18,6 +18,8 @@ public interface BookingFacade {
 
     List<Event> getEventsByDate(LocalDate date);
 
+    List<Event> getAllEvents();
+
     Event createEvent(Event event);
 
     Event updateEvent(Event event);

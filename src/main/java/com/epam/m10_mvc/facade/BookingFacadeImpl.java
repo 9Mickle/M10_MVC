@@ -28,6 +28,12 @@ public class BookingFacadeImpl implements BookingFacade {
     /**
      * Methods for Event.
      */
+
+    @Override
+    public List<Event> getAllEvents() {
+        return eventService.findAll();
+    }
+
     @Override
     public Event getEventById(Long id) {
         return eventService.findById(id);
